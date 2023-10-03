@@ -1,0 +1,106 @@
+#key .slider1 {
+  background: url(../img/index/slide1.jpg) no-repeat right top / cover;
+}
+#key .slider2 {
+  background: url(../img/index/slide2.jpg) no-repeat right top / cover;
+}
+#games {
+  padding: 60px 0 30px;
+}
+#games .flbox {
+  flex-wrap: wrap;
+  gap: 80px;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+#games .item {
+  display: flex;
+  flex-direction: column;
+  max-width: 345px;
+  filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.25));
+  background: #fff;
+  border-radius: 20px;
+  transition: 0.2s ease-in-out;
+  overflow: hidden;
+}
+#games .item:hover {
+  transform: scale(1.1);
+}
+#games .item > p.img {
+  border-radius: 20px 20px 0 0;
+  height: 345px;
+  width: 345px;
+  overflow: hidden;
+}
+#games .item > p.img img {
+  width: 100%;
+  height: auto;
+  transition: all 0.3s ease;
+}
+#games .item .content {
+  padding: 21px;
+}
+#games .item figure {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  margin-bottom: 21px;
+}
+#games .item figure img {
+  border-radius: 8px;
+  height: 80px;
+  width: 80px;
+}
+#games .item figure figcaption h3 {
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+#games .item .download {
+  display: flex;
+  justify-content: space-between;
+}
+#games .item .download p.btn {
+  width: 48%;
+}
+#games .item .download p.btn a {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: #e9ecef;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+#games .item .download p.btn a img {
+  width: 35px;
+  height: auto;
+  margin-right: 8px;
+}
+#games .item .download p.btn a span {
+  white-space: nowrap;
+}
+
+#contact {
+  text-align: center;
+  background: #ededed;
+  padding: 70px 0;
+}
+#contact h2 {
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+#contact .flbox {
+  justify-content: center;
+  gap: 50px;
+}
+#contact p.btn {
+  width: 50px;
+}
+#contact p.btn img {
+  width: 100%;
+  height: auto;
+}
