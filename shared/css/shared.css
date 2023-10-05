@@ -294,11 +294,7 @@ header .nav-fixed .nav-fl ul li:last-child {
     opacity: 0;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1365px) {
-}
 
-@media screen and (min-width: 768px) and (max-width: 866px) {
-}
 @media screen and (max-width: 767px) {
   header .menu {
     position: absolute;
@@ -314,6 +310,9 @@ header .nav-fixed .nav-fl ul li:last-child {
   #key .slider-h,
   #key .slider-h .slider {
     height: 100vh;
+  }
+  #key #scroll {
+    bottom: 15vw;
   }
 }
 
