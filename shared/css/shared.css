@@ -333,7 +333,7 @@ header .nav-fixed .nav-fl ul li:last-child {
     only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3),
     only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) {
     #key #scroll {
-      bottom: 30vw;
+      bottom: calc(env(safe-area-inset-bottom) + 30vw);
     }
   }
 }
