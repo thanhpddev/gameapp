@@ -104,7 +104,10 @@ header .nav-fl ul {
   display: flex;
 }
 header .nav-fl ul li {
-  margin-right: 40px;
+  margin-right: 50px;
+}
+header .nav-fl ul li:last-child {
+  margin-right: 0;
 }
 header .nav-fl ul li a {
   position: relative;
@@ -133,28 +136,6 @@ header .nav-fl ul li a:hover::after {
   visibility: visible;
 }
 
-header .nav-fl p.btn {
-  margin-right: 30px;
-}
-header .nav-fl p.btn:last-child {
-  margin-right: 0px;
-}
-header .nav-fl p.btn a {
-  width: 100%;
-  height: 100%;
-  display: block;
-  border: 2px solid #fff;
-  box-sizing: border-box;
-  border-radius: 50px;
-  padding: 10px 22px;
-  transition: all 0.3s ease;
-  font-weight: 500;
-}
-header .nav-fl p.btn a:hover {
-  color: #890c0c;
-  background: #fff;
-  opacity: 1;
-}
 header .nav-fixed,
 header .nav-fixed.fixed {
   height: 65px;
@@ -241,21 +222,98 @@ header .nav-fixed .nav-fl ul li:last-child {
   margin: 0;
   padding: 0;
 }
+#key #scroll {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  width: 100px;
+  height: 100px;
+}
+#key #scroll i {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-shadow: 3px 4px 5px rgba(0, 0, 0, 0.75), 3px 4px 5px rgba(0, 0, 0, 0.75);
+}
+#key #scroll a {
+  padding-top: 80px;
+}
+#key #scroll a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb07 2s infinite;
+  animation: sdb07 2s infinite;
+  opacity: 0;
+  box-sizing: border-box;
+}
+#key #scroll a span:nth-of-type(1) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+#key #scroll a span:nth-of-type(2) {
+  top: 16px;
+  -webkit-animation-delay: 0.15s;
+  animation-delay: 0.15s;
+}
+#key #scroll a span:nth-of-type(3) {
+  top: 32px;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
 
+@-webkit-keyframes sdb07 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb07 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1365px) {
 }
 
 @media screen and (min-width: 768px) and (max-width: 866px) {
 }
 @media screen and (max-width: 767px) {
-  header h1.logo {
-    padding: 0 3%;
-    width: 33vw;
+  header .menu {
+    position: absolute;
+    top: 3vw;
+    left: 3vw;
+    background: transparent;
+    height: auto;
+    padding: 0;
   }
-
+  header .logo {
+    font-size: 8vw;
+  }
   #key .slider-h,
   #key .slider-h .slider {
-    height: 120vw;
+    height: 100vh;
   }
 }
 
@@ -289,14 +347,27 @@ footer ul li a {
 footer ul li a:hover {
   text-decoration: none;
 }
-@media screen and (max-width: 1220px) and (min-width: 768px) {
-}
-@media screen and (max-width: 999px) and (min-width: 768px) {
-}
 
 @media screen and (max-width: 767px) {
   footer {
     padding: 12vw 0 9vw;
+  }
+  footer .logo {
+    font-size: 8vw;
+    margin-bottom: 9vw;
+  }
+  footer ul {
+    justify-content: center;
+    gap: 5vw;
+  }
+  footer ul li a {
+    font-size: 4vw;
+  }
+  footer address {
+    font-size: 3.7vw;
+  }
+  footer .flbox {
+    margin-bottom: 6vw;
   }
 }
 
@@ -351,25 +422,6 @@ a:hover {
 
 /*ipad*/
 @media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
-  header h1.logo {
-    width: 16vw;
-  }
-  header .nav-fl {
-    margin-top: 4vw;
-  }
-  #key .slider-h,
-  #key .slider-h .slider {
-    width: 50%;
-  }
-  #key .box {
-    left: 23.5vw;
-  }
-  #key .slider-h .slick-dots {
-    left: -45vw;
-  }
-  #key .slider-h .slick-arrow {
-    left: -42.5vw;
-  }
 }
 
 /*IE fix*/

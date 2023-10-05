@@ -5,7 +5,8 @@
   background: url(../img/index/slide2.jpg) no-repeat right top / cover;
 }
 #games {
-  padding: 60px 0 30px;
+  padding: 60px 20px 30px;
+  box-sizing: border-box;
 }
 #games .flbox {
   flex-wrap: wrap;
@@ -100,7 +101,102 @@
 #contact p.btn {
   width: 50px;
 }
+#contact p.btn a {
+  transition: all 0.3s ease;
+}
 #contact p.btn img {
   width: 100%;
   height: auto;
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1240px) {
+  #games .flbox {
+    gap: 4vw;
+  }
+  #games .item {
+    max-width: 29vw;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 815px) {
+  #games .item {
+    max-width: 44vw;
+  }
+  #games .flbox {
+    gap: 5vw;
+  }
+}
+
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
+  #games .item:hover {
+    transform: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #key .slider1 {
+    background-position: center center;
+  }
+  #key .slider2 {
+    background-position: right -45vw center;
+  }
+  #games {
+    padding: 15vw 6vw;
+  }
+  #games .item {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 12vw;
+  }
+  #games .item:hover {
+    transform: none;
+  }
+  #games .item:last-child {
+    margin-bottom: 0;
+  }
+  #games .flbox {
+    margin-bottom: 0;
+  }
+  #games .item .content {
+    padding: 5vw;
+  }
+  #games .item figure img {
+    width: 21vw;
+    height: auto;
+  }
+  #games .item figure {
+    gap: 4vw;
+    margin-bottom: 5vw;
+  }
+  #games .item figure figcaption h3 {
+    font-size: 4.5vw;
+  }
+  #games .item figure figcaption p {
+    font-size: 4vw;
+  }
+  #games .item .download p.btn a img {
+    width: 9vw;
+    margin-right: 2vw;
+  }
+  #games .item .download p.btn a span {
+    font-size: 4vw;
+  }
+  #games .item > p.img {
+    width: 100%;
+    height: auto;
+  }
+  #contact {
+    padding: 15vw 6vw;
+  }
+  #contact h2 {
+    font-size: 9vw;
+    margin-bottom: 12vw;
+  }
+  #contact .flbox {
+    display: flex;
+    gap: 10vw;
+  }
+  #contact p.btn {
+    width: 11vw;
+  }
 }

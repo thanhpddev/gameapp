@@ -40,14 +40,14 @@ body.navOpen #menu_toggle_mb * {
   padding: 0 2vw;
   box-sizing: border-box;
   overflow: visible;
-  background: #b8a47e;
+  background: #890c0c;
   width: 12vw;
   height: 11vw;
   -webkit-user-select: none;
   user-select: none;
 }
 .hamburger1.is-active {
-  background: #b8a47e;
+  background: #890c0c;
 }
 .hamburger1 p.line {
   display: block;
@@ -88,9 +88,9 @@ body.navOpen #menu_toggle_mb * {
 }
 
 header .menu_toggle {
-  padding: 3vw 0;
-  background: #fff;
-  color: #565656;
+  padding: 9vw 3vw;
+  background: #890c0c;
+  color: #fff;
   transition: all 0.5s ease 0s;
   -moz-transition: all 0.5s ease 0s;
   -webkit-transition: all 0.5s ease 0s;
@@ -133,9 +133,10 @@ header .menu_toggle ul li {
   }
   header #menu_toggle_mb .nav-fl ul li {
     margin-bottom: 6vw;
+    width: 100%;
   }
   header #menu_toggle_mb .nav-fl ul li a {
-    font-size: 4vw;
+    font-size: 6vw;
   }
   header #menu_toggle_mb .nav-fl ul li a::before,
   header #menu_toggle_mb .nav-fl ul li a:hover::before {
@@ -146,8 +147,8 @@ header .menu_toggle ul li {
   header #menu_toggle_mb .nav-fl ul li a::after,
   header #menu_toggle_mb .nav-fl ul li a:hover::after {
     right: inherit;
-    left: -2.5vw;
-    width: 1vw;
-    height: 1vw;
+    left: -3vw;
+    width: 1.5vw;
+    height: 1.5vw;
   }
 }
