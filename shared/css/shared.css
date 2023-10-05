@@ -317,14 +317,14 @@ header .nav-fixed .nav-fl ul li:last-child {
   /* iPhone X */
   @media only screen and (min-device-width: 375px) and (min-device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
     #key #scroll {
-      bottom: calc(env(safe-area-inset-bottom) + 15vw);
+      bottom: calc(env(safe-area-inset-bottom) + 30vw);
     }
   }
 
   /* iPhone XR */
   @media only screen and (min-device-width: 414px) and (min-device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
     #key #scroll {
-      bottom: calc(env(safe-area-inset-bottom) + 15vw);
+      bottom: calc(env(safe-area-inset-bottom) + 30vw);
     }
   }
 
@@ -333,7 +333,7 @@ header .nav-fixed .nav-fl ul li:last-child {
     only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3),
     only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) {
     #key #scroll {
-      bottom: calc(env(safe-area-inset-bottom) + 25vw);
+      bottom: 30vw;
     }
   }
 }
