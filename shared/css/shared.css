@@ -77,7 +77,14 @@ header .logo {
   color: #fff;
   font-weight: bold !important;
 }
-
+header .logo a {
+  display: flex;
+  align-items: center;
+}
+header .logo img {
+  width: 50px;
+  height: auto;
+}
 header .menu {
   position: fixed;
   top: 0;
@@ -307,6 +314,9 @@ header .nav-fixed .nav-fl ul li:last-child {
   header .logo {
     font-size: 8vw;
   }
+  header .logo img {
+    width: 13vw;
+  }
   #key .slider-h,
   #key .slider-h .slider {
     height: 100vh;
@@ -357,6 +367,13 @@ footer .logo {
   font-size: 30px;
   font-weight: bold !important;
 }
+footer .logo a {
+  display: flex;
+  align-items: center;
+}
+footer .logo img {
+  width: 50px;
+}
 footer ul {
   display: flex;
   gap: 35px;
@@ -376,6 +393,9 @@ footer ul li a:hover {
   footer .logo {
     font-size: 8vw;
     margin-bottom: 9vw;
+  }
+  footer .logo a {
+    justify-content: center;
   }
   footer ul {
     justify-content: center;

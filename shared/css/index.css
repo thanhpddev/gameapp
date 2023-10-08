@@ -64,6 +64,21 @@
 #games .item .download p.btn {
   width: 48%;
 }
+
+/* btn app store cursor pointer*/
+#games .item .download p.btn:first-child {
+  pointer-events: none;
+}
+#games .item .download p.btn:first-child a:hover,
+#games .item .download p.btn:first-child a:hover * {
+  opacity: 1;
+}
+#games .item .download p.btn:first-child * {
+  cursor: not-allowed;
+  pointer-events: all !important;
+}
+/**/
+
 #games .item .download p.btn a {
   display: flex;
   align-items: center;
@@ -131,15 +146,21 @@
   #games .item:hover {
     transform: none;
   }
+  #key .slider {
+    background-position: left center !important;
+  }
 }
 
 @media screen and (max-width: 767px) {
   #key .slider1 {
-    background-position: center center;
+    background: url(../img/index/slide1_sp.jpg) no-repeat center bottom / 100%
+      auto;
   }
   #key .slider2 {
-    background-position: right -45vw center;
+    background: url(../img/index/slide2_sp.jpg) no-repeat center bottom / 100%
+      auto;
   }
+
   #games {
     padding: 15vw 6vw;
   }
@@ -198,5 +219,9 @@
   }
   #contact p.btn {
     width: 11vw;
+  }
+  #pad {
+    padding-right: 400px;
+    padding-left: 400px;
   }
 }
